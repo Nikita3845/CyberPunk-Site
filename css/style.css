@@ -1,0 +1,428 @@
+@font-face{
+    font-family: Archangelsk;
+    src: url(/fonts/Archangelsk.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.title{
+    font-family: Archangelsk;
+    font-size: 62px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.blue-text{
+    color: #52BEDC;
+    font-weight: 700;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+}
+
+button, input[type='submit']{
+    text-decoration: none;
+    border: none;
+}
+
+/* header, main, footer{
+    padding: 0 320px;
+} */
+
+.container{
+    padding: 0 320px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    display: inline;
+    margin-right: 40px;
+}
+
+nav li:last-child{
+    margin-right: 0;
+}
+
+/* Section avaliable */
+
+.section-available{
+    background: url(/img/11.jpg) center/cover no-repeat;
+    height: 1000px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+}
+
+.section-available__block{
+    background: url(/img/Rectangle\ 59.png) center/cover no-repeat;
+    width: 624px;
+    height: 369px;
+    position: absolute;
+    bottom: 0;
+    right: 320px;
+    padding: 70px;
+    overflow-y: hidden;
+}
+
+.section-available__block h1{
+    margin-bottom: 25px;
+}
+
+.section-available__block button{
+    padding: 19px 50px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F8F200;
+    background-color: #000000;
+    border: none;
+}
+
+/* Section about */
+
+.section-about{
+    margin-top: 976px;
+    margin-bottom: 70px;
+}
+
+.section-about p{
+    margin-bottom: 70px;
+}
+
+.section-about__gallery{
+    display: flex;
+    flex-direction: row;
+}
+
+.section-about__gallery-column1 img:first-child{
+    margin-bottom: 32px;
+}
+
+.section-about__gallery-column1{
+    margin-right: 32px;
+}
+
+/* Selection promo */
+
+
+.section-promo{
+
+    background-image: url(/img/Group\ 246.png);
+    background-repeat: repeat-x;
+}
+
+
+.section-promo{
+    padding-top: 85px;
+    padding-bottom: 70px;
+}
+
+.section-promo .title{
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.section-promo_title{
+    /* padding-top: 85px; */
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.section-promo_title img{
+    margin-right: 32px;
+}
+
+.section-promo p{
+    color: white;
+    margin-bottom: 25px;
+}
+
+.section-promo__block{
+    display: flex;
+}
+
+.section-promo__block img{
+    width: 788px;
+    height: 456px;
+}
+
+.section-promo__block form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 73px;
+    margin-right: 32px;
+    width: 460px;
+}
+.section-promo__block form input[type='text']::placeholder,
+.section-promo__block form input[type='email']::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    color: #ffffff;
+    opacity: 0.5;
+    
+}
+
+.section-promo__block form input[type='text'],
+.section-promo__block form input[type='email']{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #777777;
+    outline: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 35px;
+    padding-bottom: 13px;
+}
+
+.section-promo__block form input[type='file']{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.section-promo__block form label[for='image']{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    border: 1px dashed #777777;
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+.section-promo__block form label[for='image'] p{
+    margin: 0;
+    line-height: 20px;
+}
+
+.section-promo__block form label[for='image'] p:first-child{
+    text-decoration: underline;
+}
+
+.section-promo__block form label[for='image'] p:nth-child(2){
+    font-size: 12px;
+}
+
+.section-promo__block form input[type='submit']{
+    width: 195px;
+    height: 59px;
+    background-color: #F8F200;
+    color: #000000;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.section-promo__block form input[type="checkbox"]{
+    align-self: flex-start;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.section-promo__block form label[for="consent"]{
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    display: inline-flex;
+    user-select: none;
+}
+
+.section-promo__block form label[for="consent"]::before{
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #777777;
+    margin-right: 10px;
+}
+
+.section-promo__block form input[type="checkbox"]:checked + label[for="consent"]::before{
+    background-image: url(/img/Check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px 14px;
+} 
+
+/* section full immersion */
+
+
+.section-full_immersion{
+    padding-top: 89px;
+    padding-bottom: 80px;
+    background-image: url(/img/full_immersion\ bg.png);
+    background-repeat: repeat-x;
+}
+
+
+.section-full_immersion__block{
+    display: flex;
+    justify-content: center;
+}
+
+
+.section-full_immersion__left{
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+    
+}
+
+.section-full_immersion__left img:first-child{
+    margin-bottom: 26px;
+}
+
+.section-full_immersion__left img:last-child{
+    padding: 0 42px;
+}
+
+
+.section-full_immersion__right button{
+    width: 194px;
+    height: 59px;
+    background-color: #000000;
+    color: #F8F200;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.section-full_immersion .markdown-list{
+    margin-bottom: 40px;
+}
+
+.markdown-list p{
+    position: relative;
+    padding-left: 42px;
+    margin-bottom: 15px;
+}
+.markdown-list p:last-child{
+    margin-bottom: 0;
+}
+
+
+.markdown-list p::before{
+    content: '';
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-full_immersion .markdown-list p:nth-child(1)::before{
+    background-image: url(/img/color_lens.png);
+}
+.section-full_immersion .markdown-list p:nth-child(2)::before{
+    background-image: url(/img/auto_awesome.png);
+}
+.section-full_immersion .markdown-list p:nth-child(3)::before{
+    background-image: url(/img/auto_awesome_motion.png);
+}
+
+.section-full_immersion__right > p{
+    margin-bottom: 25px;
+}
+
+/* Section buy */
+
+.section-buy{
+    position: relative;
+    display: flex;
+}
+
+.section-buy__right{
+    background-color: #000000;
+    color: #ffffff;
+    flex: 1;
+    padding: 70px 320px 0 32px;
+}
+
+.section-buy__right .markdown-list p:nth-child(1)::before{
+    background-image: url(/img/Subtract.svg);
+}
+.section-buy__right .markdown-list p:nth-child(2)::before{
+    background-image: url(/img/Vector\ \(3\).svg);
+}
+.section-buy__right .markdown-list p:nth-child(3)::before{
+    background-image: url(/img/Vector\ \(4\).svg);
+}
+
+.section-buy__right .markdown-list {
+    padding-bottom: 70px;
+}
+
+.section-buy .blue-text:nth-of-type(1) {
+    margin-bottom: 15px;
+}
+
+.section-buy .blue-text:nth-of-type(2) {
+    margin-bottom: 25px;
+}
+
+/* section license */
+
+.section-license .container{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.section-license div {
+    display: flex;
+    cursor: pointer;
+}
+
+.section-license p:first-child {
+    margin-right: 32px;
+}
+
+/* section copyright */
+
+.section-copyright {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.section-copyright p{
+    font-size: 12px;
+}
