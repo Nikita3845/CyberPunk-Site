@@ -67,7 +67,7 @@ nav li:last-child{
 /* Section avaliable */
 
 .section-available{
-    background: url(/img/11.jpg) center/cover no-repeat;
+    background: url(img/11.jpg) center/cover no-repeat;
     height: 1000px;
     position: absolute;
     width: 100%;
@@ -78,7 +78,7 @@ nav li:last-child{
 }
 
 .section-available__block{
-    background: url(/img/Rectangle\ 59.png) center/cover no-repeat;
+    background: url(img/Rectangle\ 59.png) center/cover no-repeat;
     width: 624px;
     height: 369px;
     position: absolute;
@@ -130,7 +130,7 @@ nav li:last-child{
 
 .section-promo{
 
-    background-image: url(/img/Group\ 246.png);
+    background-image: url(img/Group\ 246.png);
     background-repeat: repeat-x;
 }
 
@@ -270,7 +270,7 @@ nav li:last-child{
 }
 
 .section-promo__block form input[type="checkbox"]:checked + label[for="consent"]::before{
-    background-image: url(/img/Check.svg);
+    background-image: url(img/Check.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 14px 14px;
@@ -282,7 +282,7 @@ nav li:last-child{
 .section-full_immersion{
     padding-top: 89px;
     padding-bottom: 80px;
-    background-image: url(/img/full_immersion\ bg.png);
+    background-image: url(img/full_immersion\ bg.png);
     background-repeat: repeat-x;
 }
 
@@ -345,13 +345,13 @@ nav li:last-child{
 }
 
 .section-full_immersion .markdown-list p:nth-child(1)::before{
-    background-image: url(/img/color_lens.png);
+    background-image: url(img/color_lens.png);
 }
 .section-full_immersion .markdown-list p:nth-child(2)::before{
-    background-image: url(/img/auto_awesome.png);
+    background-image: url(img/auto_awesome.png);
 }
 .section-full_immersion .markdown-list p:nth-child(3)::before{
-    background-image: url(/img/auto_awesome_motion.png);
+    background-image: url(img/auto_awesome_motion.png);
 }
 
 .section-full_immersion__right > p{
@@ -373,13 +373,13 @@ nav li:last-child{
 }
 
 .section-buy__right .markdown-list p:nth-child(1)::before{
-    background-image: url(/img/Subtract.svg);
+    background-image: url(img/Subtract.svg);
 }
 .section-buy__right .markdown-list p:nth-child(2)::before{
-    background-image: url(/img/Vector\ \(3\).svg);
+    background-image: url(img/Vector\ \(3\).svg);
 }
 .section-buy__right .markdown-list p:nth-child(3)::before{
-    background-image: url(/img/Vector\ \(4\).svg);
+    background-image: url(img/Vector\ \(4\).svg);
 }
 
 .section-buy__right .markdown-list {
